@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+
 }
 
 body {
@@ -31,6 +32,8 @@ body {
 
 .info {
     padding-top: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
 
 }
 
@@ -40,6 +43,10 @@ body {
     height: 2rem;
     border-radius: 10px;
     padding: 15px;
+}
+
+.info > input:hover {
+   border: 2px solid  #10B981;
 }
 
 .info > button {
@@ -53,4 +60,5 @@ body {
 
 .info > button:hover {
     background-color:#059669;
+    transform: scale(1.1);
 }
