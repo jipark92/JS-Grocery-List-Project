@@ -68,8 +68,9 @@ body {
     padding-top: 50px;
     display: flex;
     flex-direction: column;
-    /* hidden by default */
+    /* BELOW hidden by default */
     visibility: hidden;
+    /* ABOVE hidden by default */
    
 }
 
