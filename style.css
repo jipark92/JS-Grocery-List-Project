@@ -49,6 +49,7 @@ body {
    border: 2px solid  #10B981;
 }
 
+
 .info > button {
     background-color: #10B981;
     border: none;
@@ -62,3 +63,58 @@ body {
     background-color:#059669;
     transform: scale(1.1);
 }
+
+.grocery-container {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.items {
+    display :flex;
+    justify-content: space-between;
+}
+
+.button-container > button {
+    background-color: #10B981;
+    border-radius: 10px;
+    border: none;
+    width: 50px;
+    height: 25px;
+}
+
+.button-container > button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    border: none;
+    background-color:#059669;
+
+}
+
+
+.clear-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.clear-btn {
+    width: 100px;
+    background-color: #10B981;
+    border-radius: 10px;
+    border: none;
+    height: 25px;
+}
+
+.clear-btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    border: none;
+    background-color:#059669;
+
+    
+}
+
+
