@@ -77,9 +77,17 @@ body {
 .items {
     display :flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.button-container > button {
+.items  p {
+   padding-right: 25px;
+}
+
+
+
+.button-container button {
+ 
     background-color: #10B981;
     border-radius: 10px;
     border: none;
