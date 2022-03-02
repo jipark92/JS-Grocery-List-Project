@@ -44,3 +44,9 @@ deleteButton();
 //     })
 // }
 // editButton();
+
+
+//empty string input on website load
+window.addEventListener('DOMContentLoaded', ()=>{
+    textInput.value = "";
+} )
