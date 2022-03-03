@@ -14,7 +14,7 @@ let num = 0;
 
 // submit text and list it
 submitBtns.addEventListener('click', ()=>{
-    if (inputBox.value === ''){
+    if (!inputBox.value){
         function alert (){
             container.style.boxShadow= "5px 5px 25px red";
             buttons.style.backgroundColor = "red";
@@ -28,9 +28,9 @@ submitBtns.addEventListener('click', ()=>{
                 clearBtn.style.backgroundColor = "#10B981";
                 errorText.textContent = "";
             },500)
-        }
+        };
         alert();
-    }else if (num === 0) {
+    }else if (num <= 0 ) {
         //  create item-title
         const elementZero = document.createElement('div');
         elementZero.setAttribute('class', 'item-title');
@@ -52,25 +52,31 @@ submitBtns.addEventListener('click', ()=>{
         //append button
         itemBtn.appendChild(btns);
        
+       
         //add to num
         num++;
-
+        console.log(num)
         //delete
         btns.addEventListener('click',()=>{
             itemBtn.removeChild(btns);
             itemText.removeChild(elementZero);
             console.log('clicked');
-        })
+        });
 
         //clear button
         function clearAll () {
             clearBtn.addEventListener('click', ()=>{
-                itemBtn.removeChild(btns);
+                if (true){
+                    itemBtn.removeChild(btns);
+                } else {
+                    return;
+                }
                 itemText.removeChild(elementZero);
-                inputBox.textContent = "";
+                inputBox.value = "";
              })
-        }
+        };
         clearAll();
+        inputBox.value = "";
     } else {
         num--;
     }
