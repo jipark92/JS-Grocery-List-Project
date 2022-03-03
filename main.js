@@ -12,23 +12,7 @@ function groceryList() {
     // submit text and list it
     submitBtns.addEventListener('click', (e)=>{
         e.preventDefault();
-        if (!inputBox.value){
-            function alert (){
-                container.style.boxShadow= "5px 5px 25px red";
-                buttons.style.backgroundColor = "red";
-                clearBtn.style.backgroundColor = "red";
-                errorText.textContent = "Error: No Text";
-                errorText.style.color = "red";
-                //remove red color style
-                setTimeout(()=>{
-                    container.style.boxShadow= "5px 5px 25px #10B981";
-                    buttons.style.backgroundColor = "#10B981";
-                    clearBtn.style.backgroundColor = "#10B981";
-                    errorText.textContent = "";
-                },300)
-            };
-            alert();
-        }else if (num === 0 && inputBox.value) {
+        if (num === 0 && inputBox.value) {
             //  create item-title
             const elementZero = document.createElement('div');
             elementZero.setAttribute('class', 'item-title');
@@ -66,18 +50,35 @@ function groceryList() {
                 clearBtn.addEventListener('click', ()=>{
                     if (true){
                         itemBtn.removeChild(btns);
+                        itemText.removeChild(elementZero);
+                        inputBox.value = "";
                     } else {
                         return;
-                    }
-                    itemText.removeChild(elementZero);
-                    inputBox.value = "";
+                    }                    
                 })
             };
             clearAll();
         } else {
             num = 0;
+            e.preventDefault();
+            if (!inputBox.value){
+                function alert (){
+                    container.style.boxShadow= "5px 5px 25px red";
+                    buttons.style.backgroundColor = "red";
+                    clearBtn.style.backgroundColor = "red";
+                    errorText.textContent = "Error: No Text";
+                    errorText.style.color = "red";
+                    //remove red color style
+                    setTimeout(()=>{
+                        container.style.boxShadow= "5px 5px 25px #10B981";
+                        buttons.style.backgroundColor = "#10B981";
+                        clearBtn.style.backgroundColor = "#10B981";
+                        errorText.textContent = "";
+                    },300)
+                };
+                alert();
         }
-    });
+    }});
 
     //empty string input on website load
     window.addEventListener('DOMContentLoaded', ()=>{
