@@ -10,7 +10,8 @@ function groceryList() {
     let num = 0;
 
     // submit text and list it
-    submitBtns.addEventListener('click', ()=>{
+    submitBtns.addEventListener('click', (e)=>{
+        e.preventDefault();
         if (!inputBox.value){
             function alert (){
                 container.style.boxShadow= "5px 5px 25px red";
