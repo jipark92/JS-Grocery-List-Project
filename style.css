@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    
 
 }
 
@@ -28,6 +29,7 @@ body {
 
 .title {
     text-align: center;
+
 }
 
 .info {
@@ -163,4 +165,10 @@ body {
 
 .items div {
     margin: 8px;
+}
+
+button {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
