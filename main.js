@@ -50,9 +50,10 @@ submitBtns.addEventListener('click', ()=>{
         num++;
         console.log(num)
 
+        //delete
         btns.addEventListener('click',()=>{
             itemBtn.removeChild(btns);
-            itemBtn.removeChild();
+            itemText.removeChild(elementZero);
             console.log('clicked');
         })
         
@@ -62,20 +63,7 @@ submitBtns.addEventListener('click', ()=>{
     }
 });
 
-const btns = document.createElement('button');
-btns.setAttribute('class', 'delete-btn');
-btns.textContent = 'delete';
-const btnss = document.querySelectorAll('.delete-btn');
 
-//delete button
-// function deleteButton () {
-//     btnss.forEach((btn)=>{
-//         btn.addEventListener('click',()=>{
-//             itemBtn.removeChild(btn);
-//             console.log('clicked');
-//         })
-//     })
-// }
 
 
 
