@@ -37,18 +37,19 @@ submitBtns.addEventListener('click', ()=>{
      
         //select item-title
         let itemZero = document.querySelector('.item-title');
+
         //append 
        itemText.appendChild(elementZero);
 
         //add text
         elementZero.textContent = inputBox.value;
 
-        //create delete-btn class
+        //create delete-btn
         const btns = document.createElement('button');
         btns.setAttribute('class', 'delete-btn');
         btns.textContent = 'delete';
         
-        //append 
+        //append button
         itemBtn.appendChild(btns);
        
         //add to num
@@ -71,7 +72,7 @@ submitBtns.addEventListener('click', ()=>{
         }
         clearAll();
     } else {
-        num = 0;
+        num--;
     }
 });
 
