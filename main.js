@@ -13,9 +13,10 @@ const itemText = document.querySelector('.text');
 const itemBtn = document.querySelector('.btn');
 
 
+
 let num = 0;
 
-
+// submit text and list it
 submitBtns.addEventListener('click', ()=>{
 
     
@@ -32,152 +33,51 @@ submitBtns.addEventListener('click', ()=>{
         //append 
        itemText.appendChild(elementZero);
 
-
         //add text
         elementZero.textContent = inputBox.value;
-
-       
 
         //create delete-btn class
         const btns = document.createElement('button');
         btns.setAttribute('class', 'delete-btn');
         btns.textContent = 'delete';
-
-        //append 
-        itemBtn.appendChild(btns);
-      
-
-
-        num++;
-        console.log(num)
         
 
-    } else if (num === 1) {
-        //  create item-title
-        const elementZero = document.createElement('div');
-        elementZero.setAttribute('class', 'item-title');
-     
-        //select item-title
-        let itemZero = document.querySelector('.item-title');
-        //append 
-        itemText.appendChild(elementZero);
-
-        //add text
-        elementZero.textContent = inputBox.value;
-
-        //create delete-btn class
-        const btns = document.createElement('button');
-        btns.setAttribute('class', 'delete-btn');
-        btns.textContent = 'delete';
-
         //append 
         itemBtn.appendChild(btns);
-    
-        //add to num
-        num++;
-        console.log(num)
-     } else if (num === 2) {
-        //  create item-title
-        const elementZero = document.createElement('div');
-        elementZero.setAttribute('class', 'item-title');
-    
-        //select item-title
-        let itemZero = document.querySelector('.item-title');
-        //append 
-        itemText.appendChild(elementZero);
-
-        //add text
-        elementZero.textContent = inputBox.value;
-
-        //create delete-btn class
-        const btns = document.createElement('button');
-        btns.setAttribute('class', 'delete-btn');
-        btns.textContent = 'delete';
-
-        //append 
-        itemBtn.appendChild(btns);
+       
 
         //add to num
         num++;
         console.log(num)
-    } else if (num === 3) {
-        //  create item-title
-        const elementZero = document.createElement('div');
-        elementZero.setAttribute('class', 'item-title');
-    
-        //select item-title
-        let itemZero = document.querySelector('.item-title');
-        //append 
-        itemText.appendChild(elementZero);
 
-        //add text
-        elementZero.textContent = inputBox.value;
-
-        //create delete-btn class
-        const btns = document.createElement('button');
-        btns.setAttribute('class', 'delete-btn');
-        btns.textContent = 'delete';
-
-        //append 
-        itemBtn.appendChild(btns);
-
-        //add to num
-        num++;
-        console.log(num)
-    } else if (num === 4) {
-        //  create item-title
-        const elementZero = document.createElement('div');
-        elementZero.setAttribute('class', 'item-title');
-    
-        //select item-title
-        let itemZero = document.querySelector('.item-title');
-        //append 
-        itemText.appendChild(elementZero);
-
-        //add text
-        elementZero.textContent = inputBox.value;
-
-        //create delete-btn class
-        const btns = document.createElement('button');
-        btns.setAttribute('class', 'delete-btn');
-        btns.textContent = 'delete';
-
-        //append 
-        itemBtn.appendChild(btns);
-
-        //add to num
-        num++;
-        console.log(num)
-    } else if (num === 5) {
-        //  create item-title
-        const elementZero = document.createElement('div');
-        elementZero.setAttribute('class', 'item-title');
-    
-        //select item-title
-        let itemZero = document.querySelector('.item-title');
-        //append 
-        itemText.appendChild(elementZero);
-
-        //add text
-        elementZero.textContent = inputBox.value;
-
-        //create delete-btn class
-        const btns = document.createElement('button');
-        btns.setAttribute('class', 'delete-btn');
-        btns.textContent = 'delete';
-
-        //append 
-        itemBtn.appendChild(btns);
-
-        //add to num
-        num++;
-        console.log(num)
+        btns.addEventListener('click',()=>{
+            itemBtn.removeChild(btns);
+            itemBtn.removeChild();
+            console.log('clicked');
+        })
+        
+        
     } else {
         num = 0;
     }
-    
+});
 
-})
+const btns = document.createElement('button');
+btns.setAttribute('class', 'delete-btn');
+btns.textContent = 'delete';
+const btnss = document.querySelectorAll('.delete-btn');
+
+//delete button
+// function deleteButton () {
+//     btnss.forEach((btn)=>{
+//         btn.addEventListener('click',()=>{
+//             itemBtn.removeChild(btn);
+//             console.log('clicked');
+//         })
+//     })
+// }
+
+
 
 
 
