@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -68,20 +68,20 @@ body {
     padding-top: 50px;
     display: flex;
     flex-direction: column;
-    /* BELOW hidden by default */
-    visibility: hidden;
-    /* ABOVE hidden by default */
+
    
 }
 
 .items {
     display :flex;
     justify-content: space-between;
-    align-items: center;
+  
+
 }
 
 .items  p {
    padding-right: 25px;
+ 
 }
 
 
@@ -127,5 +127,3 @@ body {
 
     
 }
-
-
